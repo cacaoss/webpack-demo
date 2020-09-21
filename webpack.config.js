@@ -12,8 +12,12 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.css$/,
+                use: ["style-loader", "css-loader", "less-loader"]
+            },
+            {
                 test: /\.less$/,
-                loader: ["style-loader", "css-loader", "less-loader"]
+                use: ["kkb-style-loader", "kkb-css-loader", "kkb-less-loader"]
             }
         ]
     },
@@ -23,5 +27,8 @@ module.exports = {
             template: "./public/index.html",
             filename: "main.html"
         })
-    ]
+    ],
+    resolveLoader: {
+        modules: ["node_modules","./loader"]
+    }
 };
