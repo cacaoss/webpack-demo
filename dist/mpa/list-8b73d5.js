@@ -81,31 +81,19 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/list/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.less */ \"./src/index.less\");\n/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_index_less__WEBPACK_IMPORTED_MODULE_0__);\n\r\nconsole.log(\"hello ZZH\");\n\n//# sourceURL=webpack:///./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/index.less":
-/*!************************!*\
-  !*** ./src/index.less ***!
-  \************************/
+/***/ "./src/list/index.js":
+/*!***************************!*\
+  !*** ./src/list/index.js ***!
+  \***************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("\n        const eleStyle=document.createElement(\"style\");\n        eleStyle.innerHTML=\"html body div {\\n  height: 100px;\\n  width: 100px;\\n  border: 1px solid blue;\\n  background-color: rgba(255, 0, 0, 0.3);\\n}\\n\";\n        document.head.appendChild(eleStyle);\n    \n\n//# sourceURL=webpack:///./src/index.less?");
+eval("console.log(\"hello List\");\n\n//# sourceURL=webpack:///./src/list/index.js?");
 
 /***/ })
 
