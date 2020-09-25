@@ -2,6 +2,8 @@ const path = require("path");
 const glob = require("glob");
 const htmlWebpackPlugin = require("html-webpack-plugin");
 const {CleanWebpackPlugin} = require("clean-webpack-plugin");
+const textWebpackPlugin = require("./plugins/text-webpack-plugin");
+const fileWebpackPlugin = require("./plugins/file-webpack-plugin");
 
 const setMpa = () => {
     const entry = {};
@@ -54,5 +56,7 @@ module.exports = {
         //     template: "./public/index.html",
         //     filename: "index.html",
         // })
+        new textWebpackPlugin(),
+        new fileWebpackPlugin(),
     ]
 };
